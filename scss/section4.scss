@@ -1,0 +1,105 @@
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background: #fafafa;
+  .section-4-inside {
+    @include section-size-display;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    .section-4-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 80%;
+      .section-4-img {
+        position: relative;
+        width: 400px;
+        height: 500px;
+        background: url(../images/circle-shape.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+        &:before {
+          position: absolute;
+          content: "";
+          top: -10px;
+          left: -50px;
+          background: url(../images/watch1.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: 0 0 5px grey;
+          border-radius: 15px;
+          width: 60%;
+          height: 60%;
+          z-index: 2;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          top: 200px;
+          left: 150px;
+          background: url(../images/watch2.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 15px;
+          box-shadow: 0 0 5px grey;
+          width: 60%;
+          height: 60%;
+          z-index: 3;
+        }
+      }
+    }
+  }
+  .section-4-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 50% auto;
+    h3 {
+      @include h3-text;
+    }
+    h2 {
+      @include h2-text;
+    }
+    p {
+      padding-top: 20px;
+      color: $lighter-blue;
+      line-height: 28px;
+    }
+    .section-4-right-bottom {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      p {
+        color: $blue;
+        width: 90%;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 15px;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        line-height: 28px;
+        i {
+          font-size: 30px;
+          color: $orange;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

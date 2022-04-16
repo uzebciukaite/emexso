@@ -1,0 +1,65 @@
+.section-1 {
+  width: 100%;
+  background: #fbd7b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .section-1-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    @include section-size-display;
+    .section-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 55%;
+      h3 {
+        @include h3-text;
+      }
+      h1 {
+        padding-top: 15px;
+        color: $blue;
+        font-size: 3em;
+        letter-spacing: 2px;
+      }
+      p {
+        padding-top: 20px;
+        color: $lighter-blue;
+        line-height: 28px;
+      }
+      .section-left-bottom {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        button {
+          @include button;
+        }
+        h4 {
+          padding-left: 20px;
+          letter-spacing: 1px;
+          font-size: 1.2em;
+          font-weight: 500;
+          color: $blue;
+        }
+      }
+    }
+    .section-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      .section-img {
+        width: 400px;
+        height: 500px;
+        background: url(../images/img1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: moveupdown 1s alternate infinite;
+        transition: 1s ease-in-out;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap");
+@import "variables";
+@import "mixins";
+@import "header";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "newsletter";
+@import "contactus";
+@import "media";
+
+body {
+  background: white;
+  font-family: barlow;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}

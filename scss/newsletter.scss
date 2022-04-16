@@ -1,0 +1,47 @@
+.newsletter {
+  width: 100%;
+  margin: auto;
+  background: #fbd7b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .newsletter-inside {
+    width: 60%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h3 {
+      @include h3-text;
+    }
+    h2 {
+      @include h2-text;
+    }
+    p {
+      padding-top: 20px;
+      color: $lighter-blue;
+      line-height: 28px;
+    }
+  }
+  form {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+
+    input {
+      height: 40px;
+      flex: 4;
+      padding-left: 10px;
+      font-size: 0.8em;
+      border: 1px solid lightgrey;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  button {
+    @include button;
+    height: 42px;
+    border-radius: 0 5px 5px 0;
+  }
+}

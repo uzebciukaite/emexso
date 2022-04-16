@@ -1,0 +1,59 @@
+@mixin button {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: barlow;
+  font-size: 1em;
+  background: $orange;
+  &:hover {
+    background: #d74026;
+    cursor: pointer;
+  }
+}
+@mixin h2-text {
+  padding-top: 15px;
+  color: $blue;
+  font-size: 2.8em;
+  letter-spacing: 2px;
+}
+@mixin h3-text {
+  color: #fb4f31;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+@mixin p-text {
+  padding-top: 20px;
+  color: $lighter-blue;
+  line-height: 28px;
+}
+@mixin h2-text-media {
+  padding: 20px 30px;
+  text-align: center;
+  color: $blue;
+  font-size: 2em;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+@mixin h3-text-media {
+  color: #fb4f31;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+@mixin p-text-media {
+  padding-top: 20px;
+  color: $lighter-blue;
+  line-height: 30px;
+}
+@mixin section-size-display {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 80%;
+}
+@mixin section-size {
+  padding: 50px 0;
+  width: 70%;
+}

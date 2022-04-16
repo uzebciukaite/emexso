@@ -1,0 +1,86 @@
+.contactus {
+  width: 100%;
+  margin: auto;
+  background: #f6f3ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .contactus-inside {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    .inside-top {
+      display: flex;
+      width: 70%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h3 {
+      @include h3-text;
+    }
+    h2 {
+      @include h2-text;
+    }
+    p {
+      padding-top: 20px;
+      color: $lighter-blue;
+      line-height: 28px;
+
+      padding-bottom: 30px;
+    }
+
+    .inside-bottom {
+      display: flex;
+      width: 100%;
+      gap: 40px;
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        label {
+          margin: 10px 0;
+          font-size: 0.9em;
+          color: $blue;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+        input {
+          height: 40px;
+          border: 1px solid lightblue;
+          border-radius: 3px;
+        }
+        textarea {
+          border: 1px solid lightblue;
+          border-radius: 3px;
+          padding-top: 10px;
+        }
+        ::placeholder {
+          padding-left: 10px;
+          color: grey;
+          font-family: barlow;
+        }
+      }
+      button {
+        @include button;
+        margin-top: 20px;
+      }
+      aside {
+        width: 30%;
+        h3 {
+          color: $blue;
+        }
+        i {
+          font-size: 15px;
+          color: $orange;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

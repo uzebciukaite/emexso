@@ -1,0 +1,221 @@
+@media (max-width: 600px) {
+  header {
+    .header-top {
+      flex-direction: column;
+      height: 100px;
+      .top-left {
+        flex-direction: column;
+        p {
+          padding-top: 7px;
+        }
+      }
+      .top-right {
+        padding-right: 0;
+        gap: 20px;
+      }
+    }
+    .header-bottom {
+      padding-top: 20px;
+      nav {
+        display: none;
+      }
+      .header-img {
+        width: 50%;
+      }
+      button {
+        width: 30%;
+        height: 40px;
+      }
+    }
+  }
+  .section-1 {
+    flex-direction: column;
+    .section-1-inside {
+      @include section-size;
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+      .section-right {
+        width: 100%;
+        .section-img {
+          width: 80%;
+        }
+      }
+      .section-left {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        h3 {
+          @include h3-text-media;
+        }
+        h1 {
+          @include h2-text-media;
+          height: 150px;
+          padding-top: 40px;
+          padding-bottom: 90px;
+        }
+        p {
+          @include p-text-media;
+        }
+        .section-left-bottom {
+          flex-direction: column;
+          width: 100%;
+          h4 {
+            padding-left: 0;
+          }
+          button {
+            width: 100%;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-2 {
+    .section-2-inside {
+      @include section-size;
+      flex-direction: column-reverse;
+      text-align: center;
+      .section-2-left {
+        width: 100%;
+      }
+      .section-2-right {
+        width: 100%;
+        h3 {
+          @include h3-text-media;
+        }
+        h2 {
+          @include h2-text-media;
+        }
+        p {
+          @include p-text-media;
+        }
+        .section-2-right-bottom {
+          flex-direction: column;
+          padding-bottom: 50px;
+          p {
+            padding-bottom: 10px;
+          }
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .section-3 {
+    .section-3-inside {
+      @include section-size;
+      .section-3-top {
+        width: 100%;
+        h3 {
+          @include h3-text-media;
+        }
+        h2 {
+          @include h2-text-media;
+        }
+        p {
+          @include p-text-media;
+        }
+      }
+      .section-grid {
+        grid-template-columns: 1fr;
+        width: 80%;
+        text-align: center;
+        .section-3-list {
+          align-items: center;
+          h4 {
+            font-size: 1.2em;
+          }
+          p {
+            @include p-text-media;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    .newsletter-inside {
+      @include section-size;
+      h3 {
+        @include h3-text-media;
+      }
+      h2 {
+        @include h2-text-media;
+      }
+      p {
+        @include p-text-media;
+      }
+    }
+  }
+
+  .section-4 {
+    .section-4-inside {
+      flex-direction: column;
+      @include section-size;
+      .section-4-left {
+        width: 100%;
+        height: 600px;
+        .section-4-img {
+          width: 100%;
+          &:before {
+            width: 75%;
+            height: 65%;
+            left: -20px;
+          }
+          &:after {
+            width: 75%;
+            height: 65%;
+            left: 100px;
+          }
+        }
+      }
+      .section-4-right {
+        width: 100%;
+        h3 {
+          @include h3-text-media;
+        }
+        h2 {
+          @include h2-text-media;
+        }
+      }
+    }
+  }
+  .contactus {
+    .contactus-inside {
+      @include section-size;
+      .inside-top {
+        text-align: center;
+        h3,
+        h2,
+        p {
+          width: 100%;
+        }
+        h3 {
+          @include h3-text-media;
+        }
+        h2 {
+          @include h2-text-media;
+        }
+      }
+      .inside-bottom {
+        flex-direction: column;
+        form {
+          width: 100%;
+          button {
+            width: 100%;
+          }
+        }
+        aside {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
